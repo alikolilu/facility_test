@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     rigger = require('gulp-rigger'),
-    cssmin = require('gulp-minify-css'),
+    //cssmin = require('gulp-minify-css'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
@@ -23,7 +23,7 @@ var path = {
     src: { //pathways where take files for gulp assembly
         html: 'src/*.html',
         js: 'src/js/main.js',
-        style: 'src/style/main.scss',
+        style: 'src/css/main.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
@@ -69,7 +69,7 @@ gulp.task('style:build', function () {
         .pipe(sourcemaps.init()) //То же самое что и с js
         .pipe(sass()) //Скомпилируем
         .pipe(prefixer()) //Добавим вендорные префиксы
-        .pipe(cssmin()) //Сожмем
+        //.pipe(cssmin()) //Сожмем
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.css)) //И в build
         .pipe(reload({stream: true}));
@@ -105,7 +105,7 @@ gulp.task('watch', function(){
         gulp.start('html:build');
     });
     watch([path.watch.style], function(event, cb) {
-        gulp.start('style:build');
+        gulp.start('css:build');
     });
     watch([path.watch.js], function(event, cb) {
         gulp.start('js:build');

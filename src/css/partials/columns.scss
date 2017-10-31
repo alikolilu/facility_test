@@ -1,0 +1,35 @@
+.columns {
+  width: 980px;
+  margin: auto;
+  &_header{
+    line-height: 0;
+  }
+  &_line {
+    width: 30px;
+    color: #646464;
+    border-top: 2px solid #646464;
+  }
+  &_header_little {
+    color: #646464;
+    font-family: "GothamProBold";
+    font-size: 18px;
+  }
+  &_text {
+    color: #646464;
+    font-size: 14px;
+    font-family: "GothamProRegular";
+    line-height: 25px;
+  }
+  &_block {
+    display: flex;
+    justify-content: space-around;
+  }
+  &_span {
+    display: block;
+    width: 18px;
+    margin: auto;
+    font-weight: 900;
+    color: #af7535;
+    overflow: hidden;
+  }
+}

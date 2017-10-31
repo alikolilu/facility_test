@@ -1,0 +1,42 @@
+.header_nav {
+  display: flex;
+    &_left > img {
+      width: 70px;
+      height: auto;
+    }
+    &_left {
+      display: flex;
+      background: url("../../img/logo.svg") no-repeat;
+      background-size: 70px auto;
+      background-position: 45px 10px;
+    }
+    &_left_header{
+      font-family: "GothamProBold";
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #646464;
+      padding: 10px 0 0 156px;
+    }
+    &_right {
+      padding: 15px 0 0 0;
+      margin-left: 390px;
+    }
+    &_right > ul {
+      display: flex;
+      & > li {
+        text-transform: uppercase;
+        list-style: none;
+        font-family: "GothamProRegular";
+        font-size: 14px;
+        padding-left: 25px;
+        & > a {
+          text-decoration: none;
+          color: #646464;
+          &:hover {
+            color: #545ad8;
+          }
+        }
+      }
+    }
+}
+

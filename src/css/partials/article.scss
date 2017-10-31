@@ -1,0 +1,30 @@
+.article {
+  width: 788px;
+  margin: auto;
+  & > div:nth-child(3) {
+    margin-top: 70px;
+  }
+  &_header_little{
+    font-family: "GothamProBold";
+    font-size: 16px;
+    color: #646464;
+    text-transform: uppercase;
+  }
+  &_text {
+    font-family: "GothamProRegular";
+    font-size: 16px;
+    line-height: 28px;
+    & > a:hover {
+      color: #545ad8;
+    }
+    &_bold {
+      font-family: "GothamProBold";
+    }
+    &_italic {
+      font-family: "GothamProItalic";
+    }
+    &_underline {
+      border-bottom: 1px solid #bcbcbc;
+    }
+  }
+}
