@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Facility test</title>
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
 </head>
 <body>
     <div id="container">
@@ -24,15 +26,48 @@
                 </ul>
             </div>
         </div>
-        <div class="header_slider">
+        <div id="block-for-slider">
+            <div class="text">
+                <h1 class="slide_header">full slider</h1>
+                <div class="slide_text_block">
+                    <p class="slide_text">
+                        Lorem ipsum dolor sit amet, consectetur <br>
+                        adipisicing elit. Alias at consectetur cumque <br>
+                        dignissimos,dolorem doloremque dolores <br>
+                        eaque incidunt itaque libero maiores, minima <br>
+                        minus necessitatibus nesciunt nostrum <br>
+                        pariatur, quidem vero vitae.
+                    </p>
+                </div>
+                <a href="#" class="slide_button fade">popup</a>
+            </div>
+            <div id="viewport">
+                <ul id="slidewrapper">
+                    <li class="mini_slide"><img src="../img/slider3.jpg" alt="1" class="slide-img"></li>
+                    <li class="mini_slide"><img src="../img/slider2.jpg" alt="2" class="slide-img"></li>
+                    <li class="mini_slide"><img src="../img/slider.jpg" alt="3" class="slide-img"></li>
+                </ul>
+                <div id="prev-next-btns">
+                    <div id="prev-btn" class="arrow_white"></div>
+                    <div id="next-btn" class="arrow_white arrow_transform"></div>
+                </div>
     
+                <ul id="nav-btns" style="z-index: 1">
+                    <li class="slide-nav-btn"></li>
+                    <li class="slide-nav-btn"></li>
+                    <li class="slide-nav-btn"></li>
+                </ul>
+            </div>
         </div>
+        <div class="slide_darker"></div>
     </section>
     <section class="mini_slider">
         <div>
             <h2 class="mini_slider_header">mini slider</h2>
             <hr class="columns_line">
         </div>
+    
+    
     </section>
     <section class="columns">
         <h2 class="columns_header">columns</h2>
@@ -131,4 +166,5 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d325283.6730595577!2d30.4641767341453!3d50.43590933248243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1509202042202" width="1280" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></section>
     </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </html>
