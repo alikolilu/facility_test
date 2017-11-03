@@ -71,3 +71,34 @@ function prevSlide() {
         slideNow--;
     }
 }
+
+
+/*
+var menu = document.getElementById('menu-label'),
+    fixedShadow = document.getElementById('fixed-shadow'),
+    rightMenu = document.getElementById('right-menu'),
+    nav = document.getElementById('header-nav'),
+    navItem = document.getElementsByClassName('header_navigation__item'),
+    content = document.getElementById('content');
+
+menu.onclick = function(e) {
+    rightMenu.classList.toggle('open-start');
+    fixedShadow.classList.toggle('open-start');
+    content.classList.toggle('blur');
+    [].forEach.call(navItem, function(elem){
+        elem.classList.toggle('open-start');
+    });
+
+    fixedShadow.onclick = closeMenu;
+
+}
+
+function closeMenu() {
+    fixedShadow.classList.remove('open-start');
+    rightMenu.classList.remove('open-start');
+    content.classList.remove('blur');
+    [].forEach.call(navItem, function(elem){
+        elem.classList.remove('open-start');
+    });
+}
+*/

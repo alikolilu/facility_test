@@ -17,16 +17,30 @@
     color: #646464;
     font-family: "GothamProBold";
     font-size: 18px;
+    @media screen and (max-width : 425px) {
+      font-size: 38px;
+    }
   }
   &_text {
     color: #646464;
     font-size: 14px;
     font-family: "GothamProRegular";
     line-height: 25px;
+    @media screen and (max-width : 425px) {
+      font-size: 34px;
+      line-height: 45px;
+    }
   }
   &_block {
+    &_part {
+      margin: 0 auto;
+    }
     display: flex;
     justify-content: space-around;
+    @media screen and(max-width: 425px) {
+      flex-direction: column;
+    }
+
   }
   &_span {
     display: block;

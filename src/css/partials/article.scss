@@ -10,11 +10,18 @@
     font-size: 16px;
     color: #646464;
     text-transform: uppercase;
+    @media screen and (max-width : 425px) {
+      font-size: 36px;
+    }
   }
   &_text {
     font-family: "GothamProRegular";
     font-size: 16px;
     line-height: 28px;
+    @media screen and (max-width : 425px) {
+      font-size: 36px;
+      line-height: 48px;
+    }
     & > a:hover {
       color: #545ad8;
     }

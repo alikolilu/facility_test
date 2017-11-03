@@ -1,3 +1,9 @@
+.mini_slider {
+  @media screen and (max-width : 425px) {
+    display: none;
+  }
+}
+
 .mini_slider_header {
   padding-top: 30px;
 }
