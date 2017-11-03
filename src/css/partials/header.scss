@@ -22,6 +22,9 @@
     &_right {
       padding: 15px 0 0 0;
       margin-left: 390px;
+      @media screen and (max-width : 1024px) {
+        margin-left: 160px;
+      }
     }
     &_right > ul {
       display: flex;
@@ -47,19 +50,26 @@
 .text {
   color: #f2f2f2;
   position: absolute;
-  top: 205px;
+  top: 275px;
   z-index: 1;
   margin-left: 390px;
+  @media screen and (max-width : 1024px){
+    margin-left: 310px;
+  }
 }
 
 .slide_ {
   &darker{
     width: 1280px;
-    height: 570px;
+    height: 720px;
     background-color: #000000;
     position: absolute;
     top: 96px;
     opacity: 0.2;
+    @media screen and (max-width : 1024px) {
+      width: 1024px;
+      height: 575px;
+    }
 
   }
   &arrow {
@@ -73,6 +83,9 @@
     text-transform: uppercase;
     text-align: center;
     line-height: 0;
+    @media screen and (max-width : 1024px){
+      font-size: 45px;
+    }
   }
   &text {
     text-align: center;
@@ -80,7 +93,7 @@
     font-family: "GothamProRegular";
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
   }
   &button {
     font-family: "GothamProBold";
@@ -93,6 +106,10 @@
     border: 1px solid #ffffff;
     border-radius: 50px;
     margin-left: 170px;
+    @media screen and (max-width : 1024px){
+      padding: 15px 53px;
+      margin-left: 120px;
+    }
     &:hover {
       background-color: #393939;
     }
@@ -102,6 +119,9 @@
 #block-for-slider {
   width: 1280px;
   margin: 0 auto;
+  @media screen and (max-width : 1024px) {
+    width: 1024px;
+  }
 }
 
 #viewport {

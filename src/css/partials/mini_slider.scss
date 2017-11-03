@@ -23,6 +23,7 @@
 }
 .carousel-block img{
   display:block;
+  width: 300px;
 }
 
 .carousel-button-left a, .carousel-button-right a{
@@ -34,6 +35,9 @@
   text-decoration:none;
   border-radius: 50%;
   border: 1px solid #000000;
+  @media screen and (max-width : 1024px) {
+    top: 16px
+  }
 }
 .carousel-button-left a {
   float: left;
@@ -47,6 +51,9 @@
       position: 50% 50%;
     }
     border: 1px solid transparent;
+  }
+  @media screen and (max-width : 1024px) {
+    left: 440px;
   }
 }
 
@@ -64,5 +71,9 @@
     }
     transform: rotate(180deg);
     border: 1px solid transparent;
+  }
+  @media screen and (max-width : 1024px) {
+    left: -440px;
+
   }
 }

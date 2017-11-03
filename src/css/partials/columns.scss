@@ -3,6 +3,10 @@
   margin: auto;
   &_header{
     line-height: 0;
+    @media screen and (max-width : 1024px) {
+      margin-top: 160px;
+    }
+
   }
   &_line {
     width: 30px;
