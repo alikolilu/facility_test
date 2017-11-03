@@ -1,40 +1,68 @@
+.mini_slider_header {
+  padding-top: 30px;
+}
 
-  .carousel  {
-    max-width: 1040px; /* ширина всего блока */
-    margin: 50px auto;
+.carousel  {
+    max-width: 1040px;
+    margin: 30px auto;
     width:100%;
-  }
+}
+
 .carousel-wrapper {
-  margin: 10px 30px; /* отступы для стрелок */
-  overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
+  margin: 10px 30px;
+  overflow: hidden;
   position:relative;
 }
 .carousel-items {
-  width: 10000px; /* устанавливаем большую ширину для набора элементов */
-  position: relative; /* позиционируем блок относительно основной области карусели */
+  width: 10000px;
+  position: relative;
 }
 .carousel-block {
-  float: left; /* выстраиваем все элементы карусели в ряд */
-  padding: 10px 33px 10px 0px; /* делаем оступы, чтобы элементы не сливались */
+  float: left;
+  padding: 10px 33px 10px 0px;
 }
 .carousel-block img{
   display:block;
 }
 
-/*********** BUTTONS ***********/
 .carousel-button-left a, .carousel-button-right a{
-  width: 25px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   position: relative;
-  top: 80px;
+  bottom: 130px;
   cursor: pointer;
   text-decoration:none;
+  border-radius: 50%;
+  border: 1px solid #000000;
 }
-.carousel-button-left a{
+.carousel-button-left a {
   float: left;
-  background: url("../../img/arrow_black.png") no-repeat;
+  background: url("../../img/arrow_black.png") no-repeat {
+    position: 50% 50%;
+  }
+  right: 60px;
+  &:hover {
+    background: url("../../img/arrow_white.png") no-repeat{
+      color: #646464;
+      position: 50% 50%;
+    }
+    border: 1px solid transparent;
+  }
 }
-.carousel-button-right a{
+
+.carousel-button-right a {
   float: right;
-  background: url("../../img/arrow_black.png") no-repeat;
+  background: url("../../img/arrow_black.png") no-repeat {
+    position: 50% 50%;
+  }
+  left: 50px;
+  transform: rotate(180deg);
+  &:hover {
+    background: url("../../img/arrow_white.png") no-repeat {
+      color: #646464;
+      position: 50% 50%;
+    }
+    transform: rotate(180deg);
+    border: 1px solid transparent;
+  }
 }

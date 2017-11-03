@@ -27,10 +27,9 @@ function right_carusel(carusel){
     });
 }
 
-//$(function() {
-//Раскомментируйте строку ниже, чтобы включить автоматическую прокрутку карусели
-   // auto_right('.carousel:first');
-//})
+$(function() {
+    auto_right('.carousel:first');
+})
 
 // Автоматическая прокрутка
 function auto_right(carusel){
